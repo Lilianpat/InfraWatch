@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+
+  --max-width: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins=", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-image: url("images/troy-mortier-AieHOEGMKmk-unsplash.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #149279;
+
+  position: relative;
+  isolation: isolate;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(#14927900, 40%, black);
+}
+
+nav {
+  position: fixed;
+  isolation: isolate;
+  width: 100%;
+  /* max-width: var(--max-width); */
+  margin-inline: auto;
+  z-index: 100;
+  margin-bottom: 20px;
+  background-color: #149279;
+
+}
+
+.nav_header {
+  padding: .5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #149279;
+}
+
+.nav_logo a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+
+.nav_logo img {
+  display: flex;
+  width: 50px;
+  height: 50px;
+}
+
+.nav_logo span {
+  display: none;
+}
+
+.nav_menu_btn {
+  font-size: 1.5rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.nav_links {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #149279;
+  transition: 0.5s;
+  z-index: -1;
+  transform: translateY(-100%);
+}
+
+.nav_links.open {
+  transform: translateY(0);
+}
+
+.nav_links a {
+  font-size: 1rem;
+  font-weight: 30px;
+  color: white;
+}
+
+.nav_links a:hover {
+  color: rgb(255, 174, 0);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.header_container {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-block: 8rem 2rem;
+  padding-inline: 2rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.secondary_header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.line {
+  width: 20px;
+  height: 2px;
+  background-color: rgb(255, 174, 0);
+  margin-inline: -10px;
+}
+
+.header_content {
+  overflow: hidden;
+  text-align: center;
+}
+
+.header_content h2 {
+  position: relative;
+  isolation: isolate;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+
+.header_content h1 {
+  font-size: 4.3rem;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.1;
+}
+
+.h1_span-1 {
+  font-size: 4rem;
+  color: rgb(255, 174, 0);
+}
+
+.h1_span-2 {
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: rgb(255, 174, 0);
+  margin-bottom: 2rem;
+}
+
+.header_content p {
+  margin-bottom: 2rem;
+  color: rgb(207, 202, 202);
+  width: 550px;
+  margin-inline: auto;
+}
+
+.header_btn .btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #149279;
+  border-radius: 5rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.header_btn .btn:hover {
+  color: #149279;
+  background-color: white;
+}
+
+
+
+
+/************ Footer Section *************/
+#footer {
+  background-color: rgb(255, 255, 255);
+  padding: 15px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+
+/************* Social Media Icons ************/
+.social-media a {
+  text-decoration: none;
+  font-size: 30px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social-media a i.fab.fa-instagram {
+  color: #149279;
+}
+
+.social-media a i.fab.fa-linkedin {
+  color: #149279;
+}
+
+.social-media a i.fab.fa-twitter {
+  color: #149279;
+}
+
+.social-media a i.fab.fa-facebook {
+  color: #149279;
+}
+
+
+/******** Explicitly setting Hover Effect on each icon ************/
+
+.social-media a i.fab.fa-instagram:hover {
+  color: rgb(201, 119, 5);
+  font-size: 40px;
+  transform: translateY(-2px);
+}
+
+.social-media a i.fab.fa-linkedin:hover {
+  color: rgb(201, 119, 5);
+  font-size: 40px;
+  transform: translateY(-2px);
+}
+
+.social-media a i.fab.fa-twitter:hover {
+  color: rgb(201, 119, 5);
+  font-size: 40px;
+  transform: translateY(-2px);
+}
+
+.social-media a i.fab.fa-facebook:hover {
+  color: rgb(201, 119, 5);
+  font-size: 40px;
+  transform: translateY(-2px);
+}
+
+/************ Copyright Section **********/
+
+#footer p {
+  color: #149279;
+  margin: 5px 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+@media (width > 768px) {
+  nav {
+    position: static;
+    padding: 0.7rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .nav_header {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .nav_logo span {
+    display: flex;
+  }
+
+  .nav_menu_btn {
+    display: none;
+  }
+
+  .nav_links {
+    position: static;
+    padding: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 3rem;
+    background-color: transparent;
+    transform: none;
+  }
+
+  .nav_links a:hover {
+    color: rgb(255, 174, 0);
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
