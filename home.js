@@ -2,7 +2,6 @@
 import { auth } from "../login/login_registration.js";
 import { onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-auth.js";
 
-
 // Listen for authentication state changes when Get Started button is clicked
 onAuthStateChanged(auth, (user) => {
   const authButton = document.getElementById('authButton');

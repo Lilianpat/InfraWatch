@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Reports</title>
+  <link rel="stylesheet" href="reports.css">
+  <link rel="shortcut icon" type="Images/jpg" href="images/Lilian-logo 4.webp">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav_header">
+      <div class="nav_logo">
+        <a href="../home.html">
+          <img src="../images/infrawatchlogo.png" alt="logo" />
+          <span>InfraWatch</span>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="nav_menu_btn" id="menu-btn">
+        <i class="ri-menu-line"></i>
+      </div>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="nav_links" id="nav-links">
+      <li><a href="../home.html">Home</a></li>
+      <li><a id="reportsBtn" href="#">Reports</a></li>
+      <li><a href="../contact/contact.html">Contact Us</a></li>
+      <li><a id="authButton" href="../login/login_registration.html">Login/Register</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content Section -->
+  <div class="container">
+    <button id="reportIssueBtn">Click this button to make a
+      report</button>
+    <h2>Your Report(s)</h2>
+    <div id="message-container"></div>
+    <div id="reports-container" class="reports-grid"></div>
+
+  </div>
+  <script type="module" src="reports.js"></script>
+</body>
+
+</html>

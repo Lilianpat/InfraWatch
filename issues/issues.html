@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porthole Issue</title>
+  <link rel="stylesheet" href="issues.css">
+  <link rel="shortcut icon" type="Images/jpg" href="images/infrawatchlogo">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav_header">
+      <div class="nav_logo">
+        <a href="../home.html">
+          <img src="../images/infrawatchlogo.png" alt="logo" />
+          <span>InfraWatch</span>
+        </a>
+      </div>
+      <!-- Mobile Menu Button -->
+      <div class="nav_menu_btn" id="menu-btn">
+        <i class="ri-menu-line"></i>
+      </div>
+    </div>
+    <!-- Navigation Links -->
+    <ul class="nav_links" id="nav-links">
+      <li><a href="../home.html">Home</a></li>
+      <li><a id="reportsBtn" href="../reports/reports.html">Reports</a></li>
+      <li><a href="../contact/contact.html">Contact Us</a></li>
+      <li><a id="authButton" href="../login/login_registration.html">Login/Register</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content Section -->
+  <div class="container">
+    <h2>Report an Issue</h2>
+    <!-- Report Submission Form -->
+    <form id="reportForm">
+      <label for="address">Location of the Issue</label>
+      <input type="text" id="address" name="address" placeholder="Enter street, city, state" required>
+
+      <label for="title">Short Title</label>
+      <input type="text" id="title" name="title" placeholder="e.g., Deep pothole near roundabout" required>
+
+      <label for="description">Detailed Description</label>
+      <textarea id="description" name="description" rows="4" placeholder="Describe the issue in detail"
+        required></textarea>
+
+      <label>Severity Level</label>
+      <div class="severity-options">
+        <div class="radio-option">
+          <input type="radio" id="minor" name="severity" value="Minor" required checked>
+          <label for="minor">Minor (not urgent)</label>
+        </div>
+        <div class="radio-option">
+          <input type="radio" id="moderate" name="severity" value="Moderate">
+          <label for="moderate">Moderate (needs attention)</label>
+        </div>
+        <div class="radio-option">
+          <input type="radio" id="severe" name="severity" value="Severe">
+          <label for="severe">Severe (dangerous, needs urgent action)</label>
+        </div>
+      </div>
+
+      <label>How Long Has the Issue Been There? (Optional)</label>
+      <select id="duration" name="duration">
+        <option value="less_than_week">Less than a week</option>
+        <option value="1-4_weeks">1-4 weeks</option>
+        <option value="over_a_month">Over a month</option>
+      </select>
+      <label for="images">Upload Image(s)</label>
+      <input type="file" id="images" name="images" multiple>
+      <label for="comments">Additional Comments or Suggestions (Optional)</label>
+      <textarea id="comments" name="comments" rows="3" placeholder="Any extra details?"></textarea>
+      <button type="submit" id="reportForm">Submit Report</button>
+    </form>
+
+    <script type="module" src="issues.js"></script>
+</body>
+
+</html>
